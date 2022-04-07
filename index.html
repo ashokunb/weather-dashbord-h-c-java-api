@@ -18,9 +18,9 @@
     </header>
     <main class="columns">
         <div class="tile is-3 is-vertical topleft">
-            <form class="box">
+            <form class="box" id="user-form">
                 <!--Input will be the search bar for the city.-->
-                <input name="search" class="input m-2" placeholder="search for a city"id="">
+                <input name="search" class="input m-2" placeholder="search for a city" id="search">
                 <button class="button is-link is-fullwidth m-2 is-rounded">Search</button>
             </form>
 
@@ -46,7 +46,7 @@
             <!--main container to hold the 5 day forecast-->
             <div class="">
                 <div class="mt-6 bottomright">
-                    <h2 class=" subtitle has-text-weight-bold">5-day forecast:</h2>
+                    <h2 class=" subtitle has-text-weight-bold">5-day forecast: <span id="clear"></span></h2>
                     <!--5 day forecast holders-->
                     <div class="columns has-text-white">
                         <div class="m-2 fiveday">
