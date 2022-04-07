@@ -1,0 +1,31 @@
+:root {
+    margin: 20px;
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+header {
+    border: black solid;
+    background-image: linear-gradient(to right, blue,purple);
+}
+
+.topright {
+    border: black solid 2px;
+    padding: 2%;
+
+}
+.fiveday {
+     background-color: rgba(6, 0, 126, 0.657);
+     padding: 2%;;
+ }
+
+ .bottomright {
+     border: black solid 2px;
+     padding: 2%;
+ }
+
+ .topleft {
+     border: black solid 2px;
+     padding: 1%;
+     margin: 1%;
+ }
