@@ -3,7 +3,6 @@ var cityInputE1 = document.querySelector('#search');
 var clearContainerE1 = document.querySelector('#clear');
 var repoSearch = document.querySelector("#repo-search");
 
-var TempPlaceholder = document.querySelector("#temp-placeholder");
 
 var formSubmitHandler = function(event){
     event.preventDefault()
@@ -44,17 +43,34 @@ var getCityInfo = function(city) {
 
 var displayCity = function(repos, searchTerm) {
     
-    repoSearch.textContent = searchTerm;
+    repoSearch.textContent = searchTerm //placeholder for date;
 
     for (var i = 0; i <repos.lenght; i++) {
 
         //gets the temperature from the api and replaces the text
-        var reposTemp = "hello"//repos[i].main.weather;
+        var TempPlaceholder = document.querySelector("#temp-placeholder");
+        var reposTemp = repos[i].main.weather;
         TempPlaceholder.innerHTML = reposTemp;
 
+        //gets the wind from the api and replaces the text
+        //gets the humidity from the api and replaces the text
+        //gets the UV-index from the api and replaces the text
 
-    };
-    
+    }
+    //gets the temperature from the api and replaces the text
+    var TempPlaceholder = document.querySelector("#temp-placeholder");
+    var reposTemp = repos.main.temp;
+    TempPlaceholder.innerHTML = "Temperature:  " + reposTemp;
+
+    //gets the humidity from the api and replaces the text
+    var TempPlaceholder = document.querySelector("#wind-placeholder");
+    var reposWind = repos.main.humidity;
+    TempPlaceholder.innerHTML = "Wind:  :  " + reposWind;
+
+    //gets the UV-index from the api and replaces the text
+    var TempPlaceholder = document.querySelector("#uv-placeholder");
+    var reposUV = //repos.;
+    TempPlaceholder.innerHTML = "UV-Index  :  " + reposUV;
     
 };
 
