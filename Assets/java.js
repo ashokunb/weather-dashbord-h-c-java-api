@@ -1,6 +1,9 @@
 var userFormEl = document.querySelector('#user-form');
 var cityInputE1 = document.querySelector('#search');
-var clearContainerE1 = document.querySelector('#clear')
+var clearContainerE1 = document.querySelector('#clear');
+var repoSearch = document.querySelector("#repo-search");
+
+var TempPlaceholder = document.querySelector("#temp-placeholder");
 
 var formSubmitHandler = function(event){
     event.preventDefault()
@@ -25,7 +28,6 @@ var getCityInfo = function(city) {
     fetch(apiUrl)
         .then(function(response){
             if (response.ok) {
-                console.log(response);
                 response.json().then(function(data) {
                     console.log(data);
                     displayCity(data, city);
@@ -40,8 +42,20 @@ var getCityInfo = function(city) {
         });
 };
 
-var displayCity = function(city, searchTerm) {
-    console.log('This is temperature')
-}
+var displayCity = function(repos, searchTerm) {
+    
+    repoSearch.textContent = searchTerm;
+
+    for (var i = 0; i <repos.lenght; i++) {
+
+        //gets the temperature from the api and replaces the text
+        var reposTemp = "hello"//repos[i].main.weather;
+        TempPlaceholder.innerHTML = reposTemp;
+
+
+    };
+    
+    
+};
 
 userFormEl.addEventListener('submit', formSubmitHandler);
