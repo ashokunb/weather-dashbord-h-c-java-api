@@ -20,7 +20,7 @@
         <div class="tile is-3 is-vertical topleft">
             <form class="box" id="user-form">
                 <!--Input will be the search bar for the city.-->
-                <input name="search" class="input m-2" placeholder="search for a city" id="search">
+                <input name="search" class="input m-2" placeholder="search for a U.S. city" id="search">
                 <button class="button is-link is-fullwidth m-2 is-rounded">Search</button>
             </form>
 
@@ -37,11 +37,11 @@
 
         <div class="column m-2">   <!--Will hold the weather for the day-->
             <div class="topright">
-                <h2 id="repo-search" class="subtitle is-4 has-text-weight-bold">Place holder for the city and date: </h2>
-                <h3 id="temp-placeholder" class="p-2">Temperature placeholder</h3>
-                <h3 id="wind-placeholder" class="p-2">Wind placeholder</h3>
-                <h3 id="humidity-placeholder" class="p-2">Humidity placeholder</h3>
-                <h3 id="uv-placeholder" class="p-2">UV index placeholder</h3>
+                <h2 id="repo-search" class="subtitle is-4 has-text-weight-bold">Your city coming soon: -- </h2>
+                <h3 id="temp-placeholder" class="p-2">Temperature: --</h3>
+                <h3 id="wind-placeholder" class="p-2">Wind: --</h3>
+                <h3 id="humidity-placeholder" class="p-2">Humidity: --</h3>
+                <button class="button is-rounded uv-change is-static" ><h3 id="uv-placeholder" class="p-2">UV index: --</h3></button>
             </div>
             <!--main container to hold the 5 day forecast-->
             <div class="">
@@ -50,43 +50,43 @@
                     <!--5 day forecast holders-->
                     <div class="columns has-text-white">
                         <div class="m-2 fiveday">
-                            <h2>Place holder for the city and date: </h2>
-                            <img>
-                            <h3 id="temp-one">Temperature place holder</h3>
-                            <h3 id="wind-one">Wind placeholder</h3>
-                            <h3 id="humidity-one">Humidity placeholder</h3>
+                            <h2 id="time-one">Your forecast coming soon: -- </h2>
+                            <img id="img-placeholder" src="">
+                            <h3 id="temp-one">Temperature: --</h3>
+                            <h3 id="wind-one">Wind: --</h3>
+                            <h3 id="humidity-one">Humidity: --</h3>
                         </div>
 
                         <div class="m-2 fiveday">
-                            <h2>Place holder for the city and date: </h2>
+                            <h2 id="time-two">Your forecast coming soon: -- </h2>
                             <img>
-                            <h3 id="temp-two">Temperature place holder</h3>
-                            <h3 id="wind-two">Wind placeholder</h3>
-                            <h3 id="humidity-two">Humidity placeholder</h3>
+                            <h3 id="temp-two">Temperature: --</h3>
+                            <h3 id="wind-two">Wind: --</h3>
+                            <h3 id="humidity-two">Humidity: --</h3>
                         </div>
 
                         <div class="m-2 fiveday">
-                            <h2>Place holder for the city and date: </h2>
+                            <h2 id="time-three">Your forecast coming soon: -- </h2>
                             <img>
-                            <h3 id="temp-three">Temperature place holder</h3>
-                            <h3 id="wind-three">Wind placeholder</h3>
-                            <h3 id="humidity-three">Humidity placeholder</h3>
+                            <h3 id="temp-three">Temperature: --</h3>
+                            <h3 id="wind-three">Wind: --</h3>
+                            <h3 id="humidity-three">Humidity: --</h3>
                         </div>
 
                         <div class="m-2 fiveday">
-                            <h2>Place holder for the city and date: </h2>
+                            <h2 id="time-four">Your forecast coming soon: -- </h2>
                             <img>
-                            <h3 id="temp-four">Temperature place holder</h3>
-                            <h3 id="wind-four">Wind placeholder</h3>
-                            <h3 id="humidity-four">Humidity placeholder</h3>
+                            <h3 id="temp-four">Temperature: --</h3>
+                            <h3 id="wind-four">Wind: --</h3>
+                            <h3 id="humidity-four">Humidity: --</h3>
                         </div>
 
                         <div class="m-2 fiveday">
-                            <h2>Place holder for the city and date: </h2>
+                            <h2 id="time-five">Your forecast coming soon: -- </h2>
                             <img>
-                            <h3 id="temp-five">Temperature place holder</h3>
-                            <h3 id="wind-five">Wind placeholder</h3>
-                            <h3 id="humidity-five">Humidity placeholder</h3>
+                            <h3 id="temp-five">Temperature: --</h3>
+                            <h3 id="wind-five">Wind: --</h3>
+                            <h3 id="humidity-five">Humidity: --</h3>
                         </div>
                         </div>
                     </div>
@@ -94,7 +94,9 @@
             </div>
         </div>
     </main>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.js"></script>
     <script src="./Assets/java.js"></script>
 </body>
 
